@@ -4,16 +4,16 @@ import { Link } from 'react-router-dom'
 function CharacterItem({character}) {
     return (
         <section className="col s12 m6 l3">
-            <div class="card  z-depth-1 hoverable">
-                <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src={character.image} alt={ character.name }/>
+            <div className="card  z-depth-1 hoverable">
+                <div className="card-image waves-effect waves-block waves-light">
+                        <img className="activator" src={character.image} alt={ character.name }/>
                 </div>
-                <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4"> { character.name } <i class="material-icons right"></i></span>
-                        <p><Link to={ character.url}>Learn More</Link> </p>
+                <div className="card-content">
+                        <span className="card-title activator grey-text text-darken-4"> { character.name } <i className="material-icons right"></i></span>
+                        <Link to="#!" className="waves-effect waves-light activator">Learn More</Link>
                 </div>
-                <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4">{ character.name }</span>
+                <div className="card-reveal">
+                    <span className="card-title grey-text text-darken-4">{ character.name }</span>
                         
                         <div className="row">
 

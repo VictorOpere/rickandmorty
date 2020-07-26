@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import Header from '../partials/Header'
+import Footer from '../partials/Footer'
 import CharacterGrid from './CharacterGrid'
 
 function Characters() {
@@ -14,7 +15,7 @@ function Characters() {
 
             const mycharacters = await axios('https://rickandmortyapi.com/api/character')
 
-            console.log(mycharacters.data.results)
+            // console.log(mycharacters.data.results)
 
             setCharacters(mycharacters.data.results)
             setIsLoading(false)
@@ -35,6 +36,8 @@ function Characters() {
             <Header/>
 
             <CharacterGrid isLoading={isLoading} characters={characters}/>
+
+            <Footer/>
 
         </div>
     )

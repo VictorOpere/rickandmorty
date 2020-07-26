@@ -13,6 +13,7 @@ function Header() {
                     <Link to="/" className="brand-logo center"><img alt="Rick and Morty" src={Logo} className="responsive-img"/></Link>
                     <Link to="#" data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons">add</i></Link>
                     <ul className="right hide-on-med-and-down">
+                        <li><Link to="/episodes">Episodes</Link></li>
                         <li><Link to="/about">About</Link></li>
                         <li><Link to="/contact">Contact</Link></li>
                         <li><Link to="/Links">Link</Link></li>
