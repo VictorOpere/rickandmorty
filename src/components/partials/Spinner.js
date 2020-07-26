@@ -3,7 +3,7 @@ import Image from '../../img/Spinner.gif'
 
 function Spinner() {
     return (
-        <div className="container">
+        <div className="container center-align">
             <img src={Image} alt="Loading"/>
         </div>
     )
